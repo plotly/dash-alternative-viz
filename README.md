@@ -8,6 +8,8 @@ interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.
 Note that the Plotly graphing interface is available in the `dash_core_components`
 library as `dcc.Graph`.
 
+![animation](animation.gif)
+
 Looking for something more generic?
 - For general images (SVG, PNG, JPG, GIF), see the `html.Img` component.
 - For XSS-safe Python interfaces for HTML, see `dash_html_components`
