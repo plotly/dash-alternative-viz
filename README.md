@@ -9,9 +9,12 @@ interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.
 Note that the Plotly graphing interface is available in the `dash_core_components`
 library as `dcc.Graph`.
 
+### [`usage.py`](https://github.com/plotly/dash-alternative-viz/blob/master/usage.py) demo
+
 ![animation](animation.gif)
 
-Looking for something more generic?
+### Looking for something more generic?
+
 - For general images (SVG, PNG, JPG, GIF), see the `html.Img` component.
 - For XSS-safe Python interfaces for HTML, see `dash_html_components`
 - For raw HTML or SVG strings, see `dash_dangerously_set_inner_html`
@@ -22,7 +25,8 @@ Looking for something more generic?
 - For technical components for data acq and engineering hardware, see `dash_daq`
 - For interactive image editing, see `dash_canvas`
 
-Having trouble choosing which graphing library to use?
+### Having trouble choosing which graphing library to use?
+
 Of course, we’re biased but we think that the Plotly library has you covered
 on most bases. It’s in active development, here are some new features ICYMI:
 - Easy grammar-of-graphics-inspired Pandas plotting in [Plotly Express](https://medium.com/@plotlygraphs/introducing-plotly-express-808df010143d)
