@@ -1,9 +1,10 @@
 # dash-alternative-viz
+
 In `dash-core-components`, the `dcc.Graph` component uses standard [Plotly](https://plot.ly/python) figures.
 
 Dash’s [component plugin system](https://dash.plot.ly/plugins) provides a
 toolchain to create Dash components from any JavaScript-based library.
-`dash-alternative-viz` is a Dash component library that provides Dash
+`dash-alternative-viz` is a proof-of-concept Dash component library that provides Dash
 interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.plot, Plotnine and others!), and Bokeh (with or without HoloViews).
 Note that the Plotly graphing interface is available in the `dash_core_components`
 library as `dcc.Graph`.
@@ -24,7 +25,7 @@ Looking for something more generic?
 Having trouble choosing which graphing library to use?
 Of course, we’re biased but we think that the Plotly library has you covered
 on most bases. It’s in active development, here are some new features ICYMI:
-- Easy grammer-of-graphics-inspired Pandas plotting in [Plotly Express](https://medium.com/@plotlygraphs/introducing-plotly-express-808df010143d)
+- Easy grammar-of-graphics-inspired Pandas plotting in [Plotly Express](https://medium.com/@plotlygraphs/introducing-plotly-express-808df010143d)
 - Fast static image export with [`plotly.io`](https://medium.com/@plotlygraphs/plotly-py-end-of-summer-updates-5422c98b9058)
 - Jupyter Widget support with [`FigureWidget`](https://medium.com/@plotlygraphs/introducing-plotly-py-3-0-0-7bb1333f69c6)
 - [JupyterLab support](https://github.com/plotly/jupyterlab-dash)
