@@ -1,0 +1,5 @@
+include dash_vis/dash_vis.min.js
+include dash_vis/dash_vis.dev.js
+include dash_vis/metadata.json
+include dash_vis/package.json
+include README.md
