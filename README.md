@@ -1,94 +1,29 @@
-# dash-vis
+# dash-alternative-viz
+In `dash-core-components`, the `dcc.Graph` component uses standard [Plotly](https://plot.ly/python) figures.
 
-dash-vis is a Dash component library.
+Dash’s [component plugin system](https://dash.plot.ly/plugins) provides a
+toolchain to create Dash components from any JavaScript-based library.
+`dash-alternative-viz` is a Dash component library that provides Dash
+interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.plot, Plotnine and others!), and Bokeh (with or without HoloViews).
+Note that the Plotly graphing interface is available in the `dash_core_components`
+library as `dcc.Graph`.
 
-Get started with:
-1. Install Dash and its dependencies: https://dash.plot.ly/installation
-2. Run `python usage.py`
-3. Visit http://localhost:8050 in your web browser
+Looking for something more generic?
+- For general images (SVG, PNG, JPG, GIF), see the `html.Img` component.
+- For XSS-safe Python interfaces for HTML, see `dash_html_components`
+- For raw HTML or SVG strings, see `dash_dangerously_set_inner_html`
+- For interactive data tables, see `dash_table`
+- For interactive network graphs, see `dash_cytoscape`
+- For interactive controls & plotly graphs, see `dash_core_components`
+- For bioinformatics components, see `dash_bio`
+- For technical components for data acq and engineering hardware, see `dash_daq`
+- For interactive image editing, see `dash_canvas`
 
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-### Install dependencies
-
-If you have selected install_dependencies during the prompt, you can skip this part.
-
-1. Install npm packages
-    ```
-    $ npm install
-    ```
-2. Create a virtual env and activate.
-    ```
-    $ virtualenv venv
-    $ . venv/bin/activate
-    ```
-    _Note: venv\Scripts\activate for windows_
-
-3. Install python packages required to build components.
-    ```
-    $ pip install -r requirements.txt
-    ```
-4. Install the python packages for testing (optional)
-    ```
-    $ pip install -r tests/requirements.txt
-    ```
-
-### Write your component code in `src/lib/components/VegaLite.react.js`. 
-
-- The demo app is in `src/demo` and you will import your example component code into your demo app.
-- Test your code in a Python environment:
-    1. Build your code
-        ```
-        $ npm run build:all
-        ```
-    2. Run and modify the `usage.py` sample dash app:
-        ```
-        $ python usage.py
-        ```
-- Write tests for your component.
-    - A sample test is available in `tests/test_usage.py`, it will load `usage.py` and you can then automate interactions with selenium.
-    - Run the tests with `$ pytest tests`.
-    - The Dash team uses these types of integration tests extensively. Browse the Dash component code on GitHub for more examples of testing (e.g. https://github.com/plotly/dash-core-components)
-- Add custom styles to your component by putting your custom CSS files into your distribution folder (`dash_vis`).
-    - Make sure that they are referenced in `MANIFEST.in` so that they get properly included when you're ready to publish your component.
-    - Make sure the stylesheets are added to the `_css_dist` dict in `dash_vis/__init__.py` so dash will serve them automatically when the component suite is requested.
-- [Review your code](./review_checklist.md)
-
-### Create a production build and publish:
-
-1. Build your code:
-    ```
-    $ npm run build:all
-    ```
-2. Create a Python tarball
-    ```
-    $ python setup.py sdist
-    ```
-    This distribution tarball will get generated in the `dist/` folder
-
-3. Test your tarball by copying it into a new environment and installing it locally:
-    ```
-    $ pip install dash_vis-0.0.1.tar.gz
-    ```
-
-4. If it works, then you can publish the component to NPM and PyPI:
-    1. Cleanup the dist folder (optional)
-        ```
-        $ rm -rf dist
-        ```
-    2. Publish on PyPI
-        ```
-        $ twine upload dist/*
-        ```
-    3. Publish on NPM (Optional if chosen False in `publish_on_npm`)
-        ```
-        $ npm publish
-        ```
-        _Publishing your component to NPM will make the JavaScript bundles available on the unpkg CDN. By default, Dash servers the component library's CSS and JS from the remote unpkg CDN, so if you haven't published the component package to NPM you'll need to set the `serve_locally` flags to `True` (unless you choose `False` on `publish_on_npm`). We will eventually make `serve_locally=True` the default, [follow our progress in this issue](https://github.com/plotly/dash/issues/284)._
-5. Share your component with the community! https://community.plot.ly/c/dash
-    1. Publish this repository to GitHub
-    2. Tag your GitHub repository with the plotly-dash tag so that it appears here: https://github.com/topics/plotly-dash
-    3. Create a post in the Dash community forum: https://community.plot.ly/c/dash
-
+Having trouble choosing which graphing library to use?
+Of course, we’re biased but we think that the Plotly library has you covered
+on most bases. It’s in active development, here are some new features ICYMI:
+- Easy grammer-of-graphics-inspired Pandas plotting in [Plotly Express](https://medium.com/@plotlygraphs/introducing-plotly-express-808df010143d)
+- Fast static image export with [`plotly.io`](https://medium.com/@plotlygraphs/plotly-py-end-of-summer-updates-5422c98b9058)
+- Jupyter Widget support with [`FigureWidget`](https://medium.com/@plotlygraphs/introducing-plotly-py-3-0-0-7bb1333f69c6)
+- [JupyterLab support](https://github.com/plotly/jupyterlab-dash)
+- [Datashader support](https://github.com/plotly/dash-datashader)
