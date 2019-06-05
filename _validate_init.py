@@ -9,7 +9,7 @@ import sys
 import importlib
 
 
-components_package = 'dash_vis'
+components_package = 'dash_alternative_viz'
 
 components_lib = importlib.import_module(components_package)
 

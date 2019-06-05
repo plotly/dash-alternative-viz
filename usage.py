@@ -1,8 +1,8 @@
-import dash_vis
 import dash
 from dash.dependencies import Input, Output
 import dash_html_components as html
 import dash_core_components as dcc
+import dash_alternative_viz as dav
 import plotly_express as px
 import altair as alt
 from bokeh.embed import json_item
@@ -42,13 +42,13 @@ app.layout = html.Div(
                 html.Tr(
                     [
                         html.Td([dcc.Graph(id="px")], style=td_style),
-                        html.Td([dash_vis.Svg(id="seaborn")], style=td_style),
+                        html.Td([dav.Svg(id="seaborn")], style=td_style),
                     ]
                 ),
                 html.Tr(
                     [
-                        html.Td([dash_vis.VegaLite(id="vega")], style=td_style),
-                        html.Td([dash_vis.BokehJSON(id="bokeh")], style=td_style),
+                        html.Td([dav.VegaLite(id="vega")], style=td_style),
+                        html.Td([dav.BokehJSON(id="bokeh")], style=td_style),
                     ]
                 ),
             ],

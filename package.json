@@ -1,5 +1,5 @@
 {
-  "name": "dash_vis",
+  "name": "dash_alternative_viz",
   "version": "0.0.1",
   "description": "Various Python datavis bindings for Dash.",
   "main": "build/index.js",
@@ -9,7 +9,7 @@
     "prepublish": "npm run validate-init",
     "build:js-dev": "webpack --mode development",
     "build:js": "webpack --mode production",
-    "build:py": "dash-generate-components ./src/lib/components dash_vis",
+    "build:py": "dash-generate-components ./src/lib/components dash_alternative_viz",
     "build:py-activated": "(. venv/bin/activate || venv\\scripts\\activate && npm run build:py)",
     "build:all": "npm run build:js && npm run build:js-dev && npm run build:py",
     "build:all-activated": "(. venv/bin/activate || venv\\scripts\\activate && npm run build:all)"

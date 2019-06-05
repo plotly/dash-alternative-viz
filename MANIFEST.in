@@ -1,5 +1,5 @@
-include dash_vis/dash_vis.min.js
-include dash_vis/dash_vis.dev.js
-include dash_vis/metadata.json
-include dash_vis/package.json
+include dash_alternative_viz/dash_alternative_viz.min.js
+include dash_alternative_viz/dash_alternative_viz.dev.js
+include dash_alternative_viz/metadata.json
+include dash_alternative_viz/package.json
 include README.md
