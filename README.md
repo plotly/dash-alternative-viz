@@ -13,7 +13,7 @@ interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.
 
 ### Looking for something more generic?
 
-The following components and component libraries are all MIT-licensed and free for you to use:
+The following components and component libraries are all *MIT-licensed* and free for you to use, just like Dash and Plotly:
 
 - For general images (SVG, PNG, JPG, GIF), see the `html.Img` component.
 - For XSS-safe Python interfaces for HTML, see [`dash_html_components`](https://dash.plot.ly/dash-html-components)
