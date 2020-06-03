@@ -47,6 +47,41 @@
       }
     }
   },
+  "src/lib/components/HighChart.react.js": {
+    "description": "HighChart renders Highcharts.js JSON",
+    "displayName": "HighChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "constructorType": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "'chart', 'stockChart', 'mapChart', 'ganttChart'"
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The highcharts chart description"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
   "src/lib/components/Svg.react.js": {
     "description": "Svg is used to render arbitrary SVG content",
     "displayName": "Svg",
