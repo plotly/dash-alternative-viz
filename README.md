@@ -5,7 +5,7 @@ In [Dash](https://dash.plot.ly/)'s built-in [`dash_core_components`](https://das
 Dash’s [component plugin system](https://dash.plot.ly/plugins) provides a
 toolchain to create Dash components from any JavaScript-based library.
 `dash-alternative-viz` is a proof-of-concept Dash component library that provides Dash
-interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.plot, Plotnine and others!), and Bokeh (with or without HoloViews).
+interfaces to Altair, matplotlib (or any compatible system like Seaborn, Pandas.plot, Plotnine and others!), Bokeh (with or without HoloViews), and HighCharts.
 
 ### [`usage.py`](https://github.com/plotly/dash-alternative-viz/blob/master/usage.py) demo
 
