@@ -21,7 +21,7 @@
     "highcharts": "^8.1.1",
     "highcharts-react-official": "^2.2.2",
     "ramda": "^0.25.0",
-    "vega": "^5.4.0",
+    "vega": "^5.23.0",
     "vega-embed": "^4.2.0",
     "vega-lite": "^3.3.0"
   },
