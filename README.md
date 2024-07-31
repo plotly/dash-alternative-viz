@@ -1,5 +1,11 @@
 # dash-alternative-viz
 
+<div align="center">
+  <a href="https://dash.plotly.com/project-maintenance">
+    <img src="https://dash.plotly.com/assets/images/maintained-by-plotly.png" width="400px" alt="Maintained by Plotly">
+  </a>
+</div>
+
 In [Dash](https://dash.plot.ly/)'s built-in [`dash_core_components`](https://dash.plot.ly/dash-core-components) library, the `dcc.Graph` component uses standard [Plotly](https://plot.ly/python) figures.
 
 Dash’s [component plugin system](https://dash.plot.ly/plugins) provides a
